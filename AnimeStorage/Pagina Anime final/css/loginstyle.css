@@ -1,0 +1,305 @@
+/* body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.fondo-login {
+    background-size:50%;
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-image:url("../img/LOGO\ V.png"); 
+  }
+.fondo-blanco
+{
+    background-color: rgba(255, 255, 255, 0.9);;
+}
+
+.register{
+    background:none;
+    margin-top: 3%;
+    padding: 0.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    
+    padding: 0.5%;
+    width: 60%;
+    background: #fff;
+    font-weight: bold;
+    color: #b63a29;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #fff;
+
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2%;
+    background: #b63a29;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    transition-duration: 1.5s;
+}
+.btnRegister:hover{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2%;
+    background: #141312;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #b63a29;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #b63a29;
+    border: 2px solid #b63a29;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+  label {
+    color:#444;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  input {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+ 
+  .maxl input{
+    box-shadow: none;
+    height: 15px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .inline{
+    padding:20px 25px 0px 0px;
+  } 
+
+ button {
+    display: block;
+    background-color: #1be422;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+.fondo-pago {
+    background-image: url("../img/LOGO V.png");
+    background-size:45%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+#login-form input{
+    display: inline;
+    margin-left: 20px;
+}
+.fechita input{
+    width: 100%;
+}
+.terminitos{
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}  */
+
+
+
+/* Estilos para el fondo oscuro detrás del modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  /* Estilos para el contenedor del modal */
+  .modal__container {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+    max-height: 120%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para el título "Crear nueva cuenta" */
+  .register-heading {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilos para el formulario de registro */
+  .register-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos para los campos de entrada de texto */
+  .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Estilos para los botones */
+  .btnRegister {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7b63b1;
+    border: 1px solid #7b63b1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+  
+  .btnRegister:hover {
+    background-color: #a083e5;
+    border-color: #ddd6ef;
+  }
+  
+  /* Estilos para los mensajes de error */
+  #error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Estilos para el checkbox "Acepto los términos y condiciones" */
+  #terminos {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el botón de cerrar el modal */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    opacity: 1;
+  }
+
+  .modal__close{
+    position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  }

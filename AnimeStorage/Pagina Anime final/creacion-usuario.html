@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Custom Bootstrap CSS -->
+  <link href="./css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="./css/loginstyle.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fondo.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb398e8f10.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <title>Anime</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #755faa">
+    <div class="container" style="background-color: #755faa">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/lgo-removebg-preview.png"alt="icono Responsive image" class="imgPrincipal img-fluid" style="width: 207px;height: 39px;">
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex input-group" role="search">
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+        </form>
+        <div class="d-flex ms-auto">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./creacion-usuario.html"><i class="fa-solid fa-user"
+                  style="font-size: 25px; padding-left: 20px;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg" 
+    style="border: 1px solid #181717; border-left: none; border-right: none; background-color: #755faa">
+    <div class="container" style="background-color: #755faa">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="box-shadow: none; border: none; ">
+            <strong>  Todo </strong>
+            </button>
+            <ul class="dropdown-menu dropdown-menu" >
+              <li><a class="dropdown-item" href="./todos.html">Figuras</a></li>
+              <li><a class="dropdown-item" href="./todos.html" >Mangas</a></li>
+              <li><a class="dropdown-item" href="./todos.html">Peluches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Rebajas</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Nuevo en Stock</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Nuevas Pre-Ventas</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Nuevos Mangas</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Cajas Sorpresa</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./carrito.html"><i class="fa-solid fa-cart-shopping"
+                style="font-size: 20px;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- Container en donde se gestiona el inicio de sesion. -->
+<div>
+  <section>
+    <div class="container-costum3 py-2 inSeccion" style="margin-top: 10px; border: 1px solid; border-radius: 15px;" >
+      <h1 class="text-center">Inicio de sesión</h1>
+      <form class="Inicio_sesion" >
+        <div class="mb-2">
+          <label for="email" class="cajaEmail"class="form-label">Correo electrónico</label>
+          <input type="email" class="correo" placeholder="Escriba su correo" class="form-control" id="correo" name="correo" required>
+        </div>
+        <div class="mb-2">
+          <label for="password" class="cajaContrasena" class="form-label">Contraseña</label>
+          <input type="password" class="inputContra"placeholder="Escriba su contrasena"class="form-control" id="contrasena" name="contrasena" required>
+        </div>
+        <div class="mb-2">
+          <button type="submit" class="inicioSeccion"value="Entrar"class="btn btn-primary">Iniciar sesión</button>
+        </div>
+      </form>
+      <a href="#" class="hero__cta">Crear Cuenta</a>
+    </div>
+
+    <section class="modal popup">
+      <div class="modal__container py-2" style="max-height: 130%;">
+        <button class="modal__close">&times;</button>
+          <div class="row">
+              <div class="register-right">
+                  <div class="fondo-login">
+                      <div class="fondo-blanco">
+                          <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                  aria-labelledby="home-tab">
+                                  <form class="row register-form" action="Index.html">
+                                      <div>
+                                          <h2 class="register-heading">Crear nueva cuenta</h2>
+                                          <div class="form-group">
+                                              <input type="text" class="form-control" placeholder="Nombre *"
+                                                  value="" required/>
+                                          </div>
+                                          <div class="form-group">
+                                              <input type="text" class="form-control" placeholder="Apellido *"
+                                                  value="" required/>
+                                          </div>
+                                          <div class="form-group">
+                                              <input type="password" class="form-control" placeholder="Contraseña *"
+                                                  value="" required/>
+                                          </div>
+                                          <div class="form-group">
+                                              <input type="password" class="form-control"
+                                                  placeholder="Confirmar Contraseña *" value="" required />
+                                          </div>
+                                          <div class="form-group">
+                                              <div class="maxl">
+                                                  <label class="radio inline">
+                                                      <input type="radio" name="gender" value="male" checked>
+                                                      <span class="gen"> Masculino </span>
+                                                  </label>
+                                                  <label class="radio inline">
+                                                      <input type="radio" name="gender" value="female">
+                                                      <span class="gen">Femenino </span>
+                                                  </label>
+                                                  <label class="radio inline">
+                                                      <input type="radio" name="gender" value="no-binario">
+                                                      <span class="gen">No Binario </span>
+                                                  </label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <input type="email" class="form-control" placeholder="Tu e-mail *"
+                                                  value="" />
+                                          </div>
+                                          <div class="form-group">
+                                              <input type="text" minlength="10" maxlength="10" name="txtEmpPhone"
+                                                  class="form-control" placeholder="Tu teléfono *" value="" />
+                                          </div>
+                                          <div class="form-group">
+                                              <select class="form-control">
+                                                  <option class="hidden" selected disabled>Por favor seleccione una
+                                                      pregunta de seguridad
+                                                  </option>
+                                                  <option>¿Cuál es tu color favorito?</option>
+                                                  <option>¿Cuál es tu hobbie?</option>
+                                                  <option>¿Cuál es el nombre de tu mascota?</option>
+                                              </select>
+                                          </div>
+                                          <div class="form-group">
+                                              <input type="text" class="form-control"
+                                                  placeholder="Ingresa tu respuesta *" value="" />
+                                          </div>
+                                          <div class="form-group fechita">
+                                              <label>Ingresa tu fecha de nacimiento</label>
+                                              <input type="date" name="date" id="date">
+                                          </div>
+
+                                          <!--   Check box "Acepto los términos y condiciones"            -->
+                                          <div id="login-form" class="terminitos">
+                                              <!-- Agrega aquí tus campos de inicio de sesión -->
+                                              <label for="terminos">Acepto los términos y condiciones</label>
+                                              <input type="checkbox" id="terminos" name="terminos" style="display:inline;margin-left:10px" required>
+                                              <span id="terminos-error" style="color: red; display: none;">Debes
+                                                  aceptar los términos y condiciones.</span>
+                                          </div>
+                                      <input type="submit" class="btnRegister" value="Registrar" />
+                                      </div><!--END .row .register-form-->
+                                  </form><!--END .tab-pane-->
+                              </div><!--END .tab-content #myTabContent-->
+                          </div><!--END .fondo-blanco-->
+                      </div><!--END .fondo-login-->
+                  </div><!--END .col-md-12 .register-right-->
+              </div><!--END .row-->
+          </div><!--END .container .register-->
+ </section>
+
+ <div style="height: 180px;">
+
+ </div>
+
+</div>
+
+  <div class="container-fluid" style="padding: 0px;">
+    <footer class="bg-dark text-center text-white" style="margin-top: 10px;">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: #7b63b1">
+        © 2023 Copyright: Matias Calisto-Jorge Fuentes
+      </div>
+    </footer>
+  </div>
+
+  <!-- <script>
+  const modalContainer = document.querySelector('.close-modal');
+  const closeModalButton = document.querySelector('.modal.popup');
+
+  closeModalButton.addEventListener('click', () => {
+    modalContainer.style.display = 'none';
+  });
+  </script> -->
+
+
+  <script src="./app.js"></script>
+  <script src="./validaciones.js"></script>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

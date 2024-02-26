@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb398e8f10.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS --Panel de Imagenes de articulo-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel='stylesheet' href='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css'>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/Style_Info_Articulo.css">
+  <link rel="stylesheet" href="./css/carusel.css">
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Custom JavaScript -->
+  <script src="./app.js"></script>
+  <script src='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js'></script>
+
+  <title>Anime</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #755faa">
+    <div class="container" style="background-color: #755faa">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/lgo-removebg-preview.png"alt="icono Responsive image" class="imgPrincipal img-fluid" style="width: 207px;height: 39px;">
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex input-group" role="search">
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+        </form>
+        <div class="d-flex ms-auto">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./creacion-usuario.html"><i class="fa-solid fa-user"
+                  style="font-size: 25px; padding-left: 20px;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg" 
+    style="border: 1px solid #181717; border-left: none; border-right: none; background-color: #755faa">
+    <div class="container" style="background-color: #755faa">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="box-shadow: none; border: none; ">
+            <strong>  Todo </strong>
+            </button>
+            <ul class="dropdown-menu dropdown-menu" >
+              <li><a class="dropdown-item" href="./todos.html">Figuras</a></li>
+              <li><a class="dropdown-item" href="./todos.html" >Mangas</a></li>
+              <li><a class="dropdown-item" href="./todos.html">Peluches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Rebajas</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Nuevo en Stock</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Nuevas Pre-Ventas</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Nuevos Mangas</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="./todos.html">Cajas Sorpresa</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./carrito.html"><i class="fa-solid fa-cart-shopping"
+                style="font-size: 20px;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row py-2">
+      <div class="col-xl-8 col-sm-12 my-2">
+        <section class="slider">
+          <div class="slider__flex">
+            <div class="slider__col">
+              <div class="slider__prev"><i class="fa-sharp fa-solid fa-arrow-up" style="color: #7b63b1 ; font-size: 30px;"></i></div> <!-- Button to switch to the previous slide -->
+
+              <div class="slider__thumbs">
+                <div class="swiper-container">
+                 
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider__image"><img
+                          src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-06.webp"
+                          alt="" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__image"><img
+                          src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-05.webp"
+                          alt="" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__image"><img
+                          src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-05.webp"
+                          alt="" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__image"><img
+                          src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-06.webp"
+                          alt="" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__image"><img
+                          src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-06.webp"
+                          alt="" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__next"><i class="fa-solid fa-arrow-down" style="color: #7b63b1; font-size: 30px;"></i></div><!-- Button to switch to the next slide -->
+            </div>
+            <div class="slider__images">
+              <div class="swiper-container">
+                <!-- Slider with images -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider__image"><img
+                        src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-01.webp"
+                        alt="" /></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image"><img
+                        src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-05.webp"
+                        alt="" /></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image"><img
+                        src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-05.webp"
+                        alt="" /></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image"><img
+                        src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-06.webp"
+                        alt="" /></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image"><img
+                        src="https://kurogami.com/med/img/productos/42/85/figura-shana-hunter-shakugan-no-shana-06.webp"
+                        alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="col-xl-4 col-sm-12 my-2" style="background-color: white; border-radius: 20px;">
+        <div class="row py-3">
+          <div class="py-3">
+            <h3 style="padding-left: 10px;"><strong>FIGURA SHANA HUNTER SHAKUGAN NO SHANA</strong> </h3>
+          </div>
+          <div class="py-1">
+            <h2 style="padding-left: 10px;">$55.000</h2>
+          </div>
+          <div class="row py-1">
+            <div class="col-lg-6 col-md-6 d-flex justify-content-around">
+              <div class="col-sm-10">
+                <div class="col-sm-2" >
+                  <div class="Boton-sumar" style="height: 50px; width: 50px;">
+                  <button id="sumar"style="border-radius: 10px; background-color: #7b63b1;">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <span class="counter"id="contador">1</span>
+                  <button id="restar" style="border-radius: 10px; background-color: #7b63b1;">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6"><button type="button" class="btn w-100 h-auto"
+                style="border-radius: 30px; background-color: #7b63b1;"> <Strong>Comprar</Strong></button></div>
+          </div>
+          <div>
+          </div>
+          <div class="accordion accordion-flush py-1" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <strong> Detalles de Producto</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div>
+                    <p><strong>Lanzamiento:</strong> Agosto de 2024</p>
+                    <p><strong>Licencia:</strong> Shakugan no Shana</p>
+                    <p><strong>Fabricado por:</strong> Good Smile Company</p>
+                    <p><strong>Tamaño aproximado:</strong>27 cms</p>
+                    <p><strong>SKU:</strong>FIG23258</p>
+                    <p><strong>GTIN:</strong>4580416947503</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <strong> Metodos de pago </strong>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-center">
+                      <p>Tarjetas</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                      <p>PayPal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="background-color: white; border-radius: 20px; margin-left: 1px;" >
+      <div class="col-lg-12 col-md-12 col-sm-12 py-3">
+        <ul class="listacontenido d-flex justify-content-around">
+          <li id="boton1" onclick="cambiarContenido('contenido1')"><button class="btn" style="border-bottom: 4px solid #7b63b1;">
+          <h3>Descripción</h3>  
+            </button></li>
+          <li id="boton2" onclick="cambiarContenido('contenido2')"><button class="btn" style="border-bottom: 4px solid #7b63b1;">
+           <h3>Fecha y reserva</h3> 
+            </button></li>
+          <li id="boton3" onclick="cambiarContenido('contenido3')"><button class="btn" style="border-bottom: 4px solid #7b63b1;">
+          <h3>Comentarios</h3>
+          </button></li>
+        </ul>
+      </div>
+      <div class="row">
+          <hr style="background-color: #7b63b1;">
+        <div class=" col-lg-12 mx-3 col-md-12" style="height: 190px;">
+        <div id="miContenedor"></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row" >
+      <h2 class="mx-3 my-2">Relacionados</h2>
+    </div>
+    <div>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div> <!-- Repetir este bloque de div.col-md-2 para cada tarjeta -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/0f/21/7d/0f217d0189f841ae794500966ab1845a.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body colorcard text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn colorboton" style="background-color: #7b63b1;">Agregar</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Repetir este bloque de div.col-md-2 para cada tarjeta -->
+            </div>
+          </div>
+          <!-- Repetir este bloque de div.carousel-item para cada fila de tarjetas -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
+          style="width: 100px;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"
+          style="width: 100px;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid" style="padding: 0px;">
+    <footer class="bg-dark text-center text-white" style="margin-top: 10px;">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: #7b63b1">
+        © 2023 Copyright: Matias Calisto-Jorge Fuentes
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="Swiper_Info_Articulo.js"></script>
+  <script src="validaciones.js"> </script>
+  <script src="dinamic_square.js"></script>
+</body>
+
+</html>
